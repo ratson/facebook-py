@@ -1,6 +1,6 @@
 Facebook Python SDK
 ====
-<table bgcolor="#F2F2F2"><tr><td><b>This SDK is deprecated.</b> This SDK does not support the new cookie format we rolled out as part of the OAuth migration.  We have no plans to add this support at this time.
+<table bgcolor="#FF0000"><tr><td><b>This SDK is deprecated.</b> This SDK does not support the new cookie format we rolled out as part of the OAuth migration.  We have no plans to add this support at this time.
 </tr></td></table>
 
 This client library is designed to support the
