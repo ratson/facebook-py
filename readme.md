@@ -1,6 +1,6 @@
 Facebook Python SDK
 ====
-<table bgcolor="#FF0000"><tr><td><b>This SDK is deprecated.</b> 
+<table bgcolor="#FF0000"><tr><td><b>This SDK is working 19/01/2012.</b> 
 This SDK does support the new cookie format from facebook(oauth2.0).
 Thanks to rodbegbie, for the hack.
 </tr></td></table>
