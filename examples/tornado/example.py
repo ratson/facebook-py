@@ -6,7 +6,7 @@
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#     https://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -44,7 +44,8 @@ class BaseHandler(tornado.web.RequestHandler):
         cookies = dict((n, self.cookies[n].value) for n in self.cookies.keys())
         cookie = facebook.get_user_from_cookie(
             cookies, options.facebook_app_id, options.facebook_app_secret)
-        if not cookie: return None
+        if not cookie:
+            return None
         user = self.db.get(
             "SELECT * FROM users WHERE id = %s", cookie["uid"])
         if not user:

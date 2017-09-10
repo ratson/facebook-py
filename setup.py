@@ -1,15 +1,29 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 from setuptools import setup
- 
+
+exec(open("facebook/version.py").read())
+
 setup(
-    name='facebook-py',
-    version='0.1',
-    description='This client library is designed to support the Facebook Graph API and the official Facebook JavaScript SDK, which is the canonical way to implement Facebook authentication.',
+    name='facebook-sdk',
+    version=__version__,
+    description='This client library is designed to support the Facebook '
+                'Graph API and the official Facebook JavaScript SDK, which '
+                'is the canonical way to implement Facebook authentication.',
     author='Ratson',
     url='https://github.com/ratson/facebook-py',
-    package_dir={'': 'src'},
-    py_modules=[
-        'facebook',
+    license='Apache',
+    packages=["facebook"],
+    long_description=open("README.rst").read(),
+    classifiers=[
+        'License :: OSI Approved :: Apache Software License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5'
+    ],
+    install_requires=[
+        'requests',
     ],
 )
