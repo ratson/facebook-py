@@ -11,6 +11,12 @@ Facebook authentication. You can read more about the Graph API by accessing its
 .. _Facebook JavaScript SDK: https://developers.facebook.com/docs/reference/javascript/
 .. _official documentation: https://developers.facebook.com/docs/reference/api/
 
+This is a fork
+==============
+
+Fork of `facebook-sdk <https://github.com/mobolic/facebook-sdk>`_ to release on PyPI.
+Please report issues to the original repository.
+
 Licensing
 =========
 
